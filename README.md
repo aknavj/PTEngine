@@ -1,7 +1,7 @@
 # PTEngine
 
 The Planet Engine is designed to dynamicly generate spherical terrain (planet) using staticly defined configuration via *.conf file.
-Process of 3D spherical terrain is based using Perilin noise with Fractal of Brown Movement (fBm).
+Process of 3D spherical terrain generation is based using implementation of methods like Perilin noise and Fractal of Brown Movement (fBm).
 
 ## Features
 
@@ -30,6 +30,7 @@ Manipulating insinde aplication is defined by control scheme below
 
 Keyboard combination | Description
 ---------------------|-------------
+Keyboard arrows | Orbit rotation
 W,S,A,D | Orbit movement
 Space | Stop
 'c' | Capture video
@@ -64,8 +65,8 @@ atmosphere.Esun | VALUE | Sun intensity (in atmosphere, on planet)
 atmosphere.Kr | VALUE |
 atmosphere.Km | VALUE |
 atmosphere.g | VALUE | Planet's gravity definition (Earth -9,81)
-factory.[factory_id].type | CLASS_NAME |  
+factory.[factory_id].type | CLASS_NAME |  Example CSimpleCraterFactory, CGrassFactory, CSimpleColorMapFactory
 factory.[factory_id].seed | VALUE | Seed number used for terrain generation
 factory.[factory_id].octaves | VALUE | Number of octaves used for terrain generation (Perilin noise)
 factory.[factory_id].roughness |VALUE | Surface roughness used for terrain generation
-factory.[factory_id].color.[color_id] | R, G, B, A | - 
+factory.[factory_id].color.[color_id] | R, G, B, A | Color values
