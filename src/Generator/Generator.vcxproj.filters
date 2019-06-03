@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Includes">
+      <UniqueIdentifier>{d22b611a-228f-448b-8ed2-5108341ffb61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{1447f1c1-eaed-4f25-9084-37ab571197d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Engine">
+      <UniqueIdentifier>{e849f8f0-7a76-4c76-89c6-38b6951fa63c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Generator">
+      <UniqueIdentifier>{40399cce-fe86-432b-a154-483c5f525637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Engine">
+      <UniqueIdentifier>{69c6c684-fb9a-4746-aa43-606ef56ace65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Generator">
+      <UniqueIdentifier>{79f0a97f-2f40-43a0-a2f9-024757cd1395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Engine\Tasks">
+      <UniqueIdentifier>{6fbfcf27-2fa6-4923-b195-8a8643e85dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Engine\Tasks">
+      <UniqueIdentifier>{64c20790-801c-480a-ba3a-fa2b3412a908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Engine\Utils">
+      <UniqueIdentifier>{b8d22a74-7f4d-482d-9e3c-4b6179259023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Engine\Utils">
+      <UniqueIdentifier>{29599816-40c4-47c1-a79f-e4174e14ccbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Engine\Framework">
+      <UniqueIdentifier>{ae9075bf-f797-49e7-a3e1-54e7ac4a3ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Engine\Framework">
+      <UniqueIdentifier>{b24d606a-7d09-48d7-919f-82271dc5aa72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Engine\Rendering">
+      <UniqueIdentifier>{190f858f-ad2d-4da7-b6fb-3581296822ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Engine\Rendering">
+      <UniqueIdentifier>{af551d16-9b63-47ad-b84c-5d8ad4846fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Engine\Math">
+      <UniqueIdentifier>{4d9d69a3-ee6b-42bb-8c2e-ffaea8bbb3b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Engine\Math">
+      <UniqueIdentifier>{603fc681-1ac6-44d8-85a2-9087542e3a0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GrassFactory.cpp">
+      <Filter>Sources\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="MixedHeightMapFactory.cpp">
+      <Filter>Sources\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetaryMap.cpp">
+      <Filter>Sources\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetaryMapCoord.cpp">
+      <Filter>Sources\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetaryMapNode.cpp">
+      <Filter>Sources\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanetaryObject.cpp">
+      <Filter>Sources\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Tasks\CameraTask.cpp">
+      <Filter>Sources\Engine\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Tasks\CaptureTask.cpp">
+      <Filter>Sources\Engine\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Tasks\ConsoleTask.cpp">
+      <Filter>Sources\Engine\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Tasks\InputTask.cpp">
+      <Filter>Sources\Engine\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Tasks\TimerTask.cpp">
+      <Filter>Sources\Engine\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Tasks\VideoTask.cpp">
+      <Filter>Sources\Engine\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Utils\DateTime.cpp">
+      <Filter>Sources\Engine\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Framework\Texture.cpp">
+      <Filter>Sources\Engine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Framework\PixelBuffer.cpp">
+      <Filter>Sources\Engine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Utils\PropertySet.cpp">
+      <Filter>Sources\Engine\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Rendering\CGShaderObject.cpp">
+      <Filter>Sources\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Kernel.cpp">
+      <Filter>Sources\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Math\Noise.cpp">
+      <Filter>Sources\Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Framework\Profiler.cpp">
+      <Filter>Sources\Engine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Framework\Object.cpp">
+      <Filter>Sources\Engine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Framework\Font.cpp">
+      <Filter>Sources\Engine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Rendering\GLBufferObject.cpp">
+      <Filter>Sources\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Rendering\GLFrameBufferObject.cpp">
+      <Filter>Sources\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Rendering\GLShaderObject.cpp">
+      <Filter>Sources\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="MainAppTask.cpp">
+      <Filter>Sources\Generator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Engine\Tasks\CameraTask.h">
+      <Filter>Includes\Engine\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Tasks\CaptureTask.h">
+      <Filter>Includes\Engine\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Tasks\ConsoleTask.h">
+      <Filter>Includes\Engine\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Tasks\InputTask.h">
+      <Filter>Includes\Engine\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Tasks\TimerTask.h">
+      <Filter>Includes\Engine\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Tasks\VideoTask.h">
+      <Filter>Includes\Engine\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Allocator.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\DateTime.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Dator.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Factory.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Interpolator.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Log.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Reference.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Singleton.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Trigger.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Counter.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Framework\Texture.h">
+      <Filter>Includes\Engine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Framework\PixelBuffer.h">
+      <Filter>Includes\Engine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\Functor.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Framework\Font.h">
+      <Filter>Includes\Engine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Framework\Object.h">
+      <Filter>Includes\Engine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Framework\Profiler.h">
+      <Filter>Includes\Engine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utils\PropertySet.h">
+      <Filter>Includes\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Rendering\CGShaderObject.h">
+      <Filter>Includes\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Rendering\GLBufferObject.h">
+      <Filter>Includes\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Rendering\GLShaderObject.h">
+      <Filter>Includes\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Rendering\GLFrameBufferObject.h">
+      <Filter>Includes\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Kernel.h">
+      <Filter>Includes\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Base.h">
+      <Filter>Includes\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Tasks\KernelTask.h">
+      <Filter>Includes\Engine\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Engine.h">
+      <Filter>Includes\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math\Random.h">
+      <Filter>Includes\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math\Noise.h">
+      <Filter>Includes\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math\Matrix.h">
+      <Filter>Includes\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math\Geometry.h">
+      <Filter>Includes\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math\MathLib.h">
+      <Filter>Includes\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassFactory.h">
+      <Filter>Includes\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="MixedHeightMapFactory.h">
+      <Filter>Includes\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetaryMap.h">
+      <Filter>Includes\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetaryMapCoord.h">
+      <Filter>Includes\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetaryMapNode.h">
+      <Filter>Includes\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanetaryObject.h">
+      <Filter>Includes\Generator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

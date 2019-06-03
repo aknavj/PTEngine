@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{520CC686-6202-4EFA-B85F-40EE2CBCBF85}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Launcher</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>Generator_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./;../../externs/include/;../Engine/;../Engine/Tasks;../Engine/Utils;../Engine/Framework;../Engine/Math;../Engine/Rendering;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../externs/lib/%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cg.lib;cgGL.lib;Vfw32.lib;glew32.lib;libpng.lib;sdl.lib;SDLmain.lib;zlib.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Bscmake>
+      <PreserveSBR>true</PreserveSBR>
+    </Bscmake>
+    <BuildLog>
+      <Path>$(IntDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Engine\Framework\Font.cpp" />
+    <ClCompile Include="..\Engine\Framework\Object.cpp" />
+    <ClCompile Include="..\Engine\Framework\PixelBuffer.cpp" />
+    <ClCompile Include="..\Engine\Framework\Profiler.cpp" />
+    <ClCompile Include="..\Engine\Framework\Texture.cpp" />
+    <ClCompile Include="..\Engine\Kernel.cpp" />
+    <ClCompile Include="..\Engine\Math\Noise.cpp" />
+    <ClCompile Include="..\Engine\Rendering\CGShaderObject.cpp" />
+    <ClCompile Include="..\Engine\Rendering\GLBufferObject.cpp" />
+    <ClCompile Include="..\Engine\Rendering\GLFrameBufferObject.cpp" />
+    <ClCompile Include="..\Engine\Rendering\GLShaderObject.cpp" />
+    <ClCompile Include="..\Engine\Tasks\CameraTask.cpp" />
+    <ClCompile Include="..\Engine\Tasks\CaptureTask.cpp" />
+    <ClCompile Include="..\Engine\Tasks\ConsoleTask.cpp" />
+    <ClCompile Include="..\Engine\Tasks\InputTask.cpp" />
+    <ClCompile Include="..\Engine\Tasks\TimerTask.cpp" />
+    <ClCompile Include="..\Engine\Tasks\VideoTask.cpp" />
+    <ClCompile Include="..\Engine\Utils\DateTime.cpp" />
+    <ClCompile Include="..\Engine\Utils\PropertySet.cpp" />
+    <ClCompile Include="GrassFactory.cpp" />
+    <ClCompile Include="MixedHeightMapFactory.cpp" />
+    <ClCompile Include="PlanetaryMap.cpp" />
+    <ClCompile Include="PlanetaryMapCoord.cpp" />
+    <ClCompile Include="PlanetaryMapNode.cpp" />
+    <ClCompile Include="PlanetaryObject.cpp" />
+    <ClCompile Include="MainAppTask.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Engine\Base.h" />
+    <ClInclude Include="..\Engine\Engine.h" />
+    <ClInclude Include="..\Engine\Framework\Font.h" />
+    <ClInclude Include="..\Engine\Framework\Object.h" />
+    <ClInclude Include="..\Engine\Framework\PixelBuffer.h" />
+    <ClInclude Include="..\Engine\Framework\Profiler.h" />
+    <ClInclude Include="..\Engine\Framework\Texture.h" />
+    <ClInclude Include="..\Engine\Kernel.h" />
+    <ClInclude Include="..\Engine\Math\MathLib.h" />
+    <ClInclude Include="..\Engine\Math\Geometry.h" />
+    <ClInclude Include="..\Engine\Math\Matrix.h" />
+    <ClInclude Include="..\Engine\Math\Noise.h" />
+    <ClInclude Include="..\Engine\Math\Random.h" />
+    <ClInclude Include="..\Engine\Rendering\CGShaderObject.h" />
+    <ClInclude Include="..\Engine\Rendering\GLBufferObject.h" />
+    <ClInclude Include="..\Engine\Rendering\GLFrameBufferObject.h" />
+    <ClInclude Include="..\Engine\Rendering\GLShaderObject.h" />
+    <ClInclude Include="..\Engine\Tasks\CameraTask.h" />
+    <ClInclude Include="..\Engine\Tasks\CaptureTask.h" />
+    <ClInclude Include="..\Engine\Tasks\ConsoleTask.h" />
+    <ClInclude Include="..\Engine\Tasks\InputTask.h" />
+    <ClInclude Include="..\Engine\Tasks\KernelTask.h" />
+    <ClInclude Include="..\Engine\Tasks\TimerTask.h" />
+    <ClInclude Include="..\Engine\Tasks\VideoTask.h" />
+    <ClInclude Include="..\Engine\Utils\Allocator.h" />
+    <ClInclude Include="..\Engine\Utils\Counter.h" />
+    <ClInclude Include="..\Engine\Utils\DateTime.h" />
+    <ClInclude Include="..\Engine\Utils\Dator.h" />
+    <ClInclude Include="..\Engine\Utils\Factory.h" />
+    <ClInclude Include="..\Engine\Utils\Functor.h" />
+    <ClInclude Include="..\Engine\Utils\Interpolator.h" />
+    <ClInclude Include="..\Engine\Utils\Log.h" />
+    <ClInclude Include="..\Engine\Utils\PropertySet.h" />
+    <ClInclude Include="..\Engine\Utils\Reference.h" />
+    <ClInclude Include="..\Engine\Utils\Singleton.h" />
+    <ClInclude Include="..\Engine\Utils\Trigger.h" />
+    <ClInclude Include="GrassFactory.h" />
+    <ClInclude Include="MixedHeightMapFactory.h" />
+    <ClInclude Include="PlanetaryMap.h" />
+    <ClInclude Include="PlanetaryMapCoord.h" />
+    <ClInclude Include="PlanetaryMapNode.h" />
+    <ClInclude Include="PlanetaryObject.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
