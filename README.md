@@ -1,4 +1,5 @@
 # PTEngine
+![PTE Logo](/screenshots/PTElogo.png)
 
 The Planet Engine is designed to generate spherical terrain (planets) using static configuration via a * .conf file.
 The process of 3D spherical terrain generation is based on the implementation of methods like Perlin noise and Fractal of the Brown Movement (fBm).
