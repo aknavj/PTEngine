@@ -1,5 +1,4 @@
 # PTEngine
-Planet Engine - Award winning project now GNU/GPL
 
 The Planet Engine is designed to dynamicly generate spherical terrain (planet) using staticly defined configuration via *.conf file.
 Process of 3D spherical terrain is based using Perilin noise with Fractal of Brown Movement (fBm).
@@ -18,6 +17,13 @@ Process of 3D spherical terrain is based using Perilin noise with Fractal of Bro
 - [x] Simplistic collision model (Camera Based)
 - [x] Effects: - Atmosphere glow
 
+## Compilation
+
+For a sucessful compilation you dont need any additional libraries, because solution already comming with external dependencies. So only what you need to worry about is to have a working C/C++ compiler's toolchain.
+
+- [x] MICROSOFT WINDOWS: Microsoft Visual Studio 2013
+- [ ] LINUX + MULTIPLATFORM : Sconstruct build system
+
 ## Controls
 
 Manipulating insinde aplication is defined by control scheme below
@@ -34,7 +40,9 @@ Space | Stop
 
 ## Description of Config file
 
-Planets can or might by modified/added via configuration file, using a following description. Before every configuration variable there is a <b>planet</b> name tag followed by <b>[identificator]</b> which is starting always from 0.
+Planets can or might by modified/added via configuration file, using a following description. Before every configuration variable there is a **planet** name tag followed by **[identificator]** which is starting always from 0. 
+
+You can just see, edit and playaround with the **"Generator.conf"** file to see what is happening in the application.
 
 ### Example:
 
