@@ -6,17 +6,17 @@ The process of 3D spherical terrain generation is based on the implementation of
 
 ## Features
 
-- [x] Math library
-- [x] Task system
-- [x] Image loading (PNG, DDS)
-- [x] Built-in profiler
-- [x] Video recording via AVI
-- [x] Terrain based generation using Perlin noise and the Fractal of Brown Movement (fBm)
-- [x] Dynamic texture streaming and generation
-- [x] Advanced Level of Detail
-- [x] Frustum culling
-- [x] Simplistic collision model (Camera Based)
-- [x] Effects: - Atmosphere glow
+* Math library
+* Task system
+* Image loading (PNG, DDS)
+* Built-in profiler
+* Video recording via AVI
+* Terrain based generation using Perlin noise and the Fractal of Brown Movement (fBm)
+* Dynamic texture streaming and generation
+* Advanced Level of Detail
+* Frustum culling
+* Simplistic collision model (Camera Based)
+* Effects: - Atmosphere glow
 
 ## Compilation
 
